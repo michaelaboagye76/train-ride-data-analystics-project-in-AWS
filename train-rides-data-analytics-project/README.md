@@ -1,5 +1,3 @@
----
-
 # Train Rides Data Analytics Project
 
 ## Project Overview
@@ -14,11 +12,11 @@ The goal was to:
 * Run SQL queries in **Athena** to generate insights.
 * Prepare data for visualization in **QuickSight** or other BI tools.
 
----
+
 
 ##  Data Description
 
-The dataset contained transaction-level train ticket information with the following key fields:
+The dataset contained transactionlevel train ticket information with the following key fields:
 
 * **Transaction & Purchase**
 
@@ -40,11 +38,11 @@ The dataset contained transaction-level train ticket information with the follow
   * `"departure station"` / `"arrival destination"`
   * `"date of journey"` (string → `DATE`)
   * `"departure time"`, `"arrival time"`, `"actual arrival time"` (timestamps)
-  * `"journey status"` (on-time, delayed, cancelled)
+  * `"journey status"` (ontime, delayed, cancelled)
   * `"reason for delay"`
   * `"refund request"`
 
----
+
 
 ##  Data Engineering Workflow
 
@@ -71,11 +69,11 @@ The dataset contained transaction-level train ticket information with the follow
    * Cast date/time strings into proper types using `CAST` and `date_parse`.
    * Aggregated ticket sales, prices, and journey performance.
 
-5. **Visualization (BI-ready)**
+5. **Visualization (BIready)**
 
    * Data was prepared for dashboards in **Amazon QuickSight** (or Power BI/Tableau).
 
----
+
 
 ##  Key Insights Generated
 
@@ -97,7 +95,7 @@ The dataset contained transaction-level train ticket information with the follow
    * Peak **purchase times** (morning vs evening).
    * Seasonal demand trends by **date of purchase**.
 
----
+
 
 ##  Sample Queries
 
@@ -136,7 +134,7 @@ WHERE "refund request" IS NOT NULL
 GROUP BY "ticket type";
 ```
 
----
+
 
 ## Deliverables
 
@@ -145,6 +143,6 @@ GROUP BY "ticket type";
 * **Athena SQL queries** for analysis.
 * **Insights & visualizations** ready for BI dashboards.
 
----
+
 
 
