@@ -1,5 +1,3 @@
----
-
 # Train Rides Data Analytics Project
 
 ## Project Overview
@@ -15,7 +13,6 @@ The goal was to:
 * Prepare data for visualization in **QuickSight** or other BI tools.
 
 ---
-
 ##  Data Description
 
 The dataset contained transaction-level train ticket information with the following key fields:
