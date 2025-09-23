@@ -1,3 +1,5 @@
+---
+
 # Train Rides Data Analytics Project
 
 ## Project Overview
@@ -12,11 +14,11 @@ The goal was to:
 * Run SQL queries in **Athena** to generate insights.
 * Prepare data for visualization in **QuickSight** or other BI tools.
 
-
+---
 
 ##  Data Description
 
-The dataset contained transactionlevel train ticket information with the following key fields:
+The dataset contained transaction-level train ticket information with the following key fields:
 
 * **Transaction & Purchase**
 
@@ -38,11 +40,14 @@ The dataset contained transactionlevel train ticket information with the followi
   * `"departure station"` / `"arrival destination"`
   * `"date of journey"` (string → `DATE`)
   * `"departure time"`, `"arrival time"`, `"actual arrival time"` (timestamps)
-  * `"journey status"` (ontime, delayed, cancelled)
+  * `"journey status"` (on-time, delayed, cancelled)
   * `"reason for delay"`
   * `"refund request"`
 
+---
 
+## Architecture Diagram
+![](images/architectire_diagram.png)
 
 ##  Data Engineering Workflow
 
@@ -69,10 +74,11 @@ The dataset contained transactionlevel train ticket information with the followi
    * Cast date/time strings into proper types using `CAST` and `date_parse`.
    * Aggregated ticket sales, prices, and journey performance.
 
-5. **Visualization**
+5. **Visualization (BI-ready)**
 
-   * Data was prepared for dashboards in **Amazon QuickSight**.
+   * Data was prepared for dashboards in **Amazon QuickSight** (or Power BI/Tableau).
 
+---
 
 ##  Key Insights Generated
 
@@ -94,7 +100,7 @@ The dataset contained transactionlevel train ticket information with the followi
    * Peak **purchase times** (morning vs evening).
    * Seasonal demand trends by **date of purchase**.
 
-
+---
 
 ##  Sample Queries
 
@@ -133,7 +139,7 @@ WHERE "refund request" IS NOT NULL
 GROUP BY "ticket type";
 ```
 
-
+---
 
 ## Deliverables
 
@@ -142,6 +148,6 @@ GROUP BY "ticket type";
 * **Athena SQL queries** for analysis.
 * **Insights & visualizations** ready for BI dashboards.
 
-
+---
 
 
