@@ -69,7 +69,7 @@ The dataset contained transactionlevel train ticket information with the followi
    * Cast date/time strings into proper types using `CAST` and `date_parse`.
    * Aggregated ticket sales, prices, and journey performance.
 
-5. **Visualization (BIready)**
+5. **Visualization**
 
    * Data was prepared for dashboards in **Amazon QuickSight** (or Power BI/Tableau).
 
