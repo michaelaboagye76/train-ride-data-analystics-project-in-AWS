@@ -71,8 +71,7 @@ The dataset contained transactionlevel train ticket information with the followi
 
 5. **Visualization**
 
-   * Data was prepared for dashboards in **Amazon QuickSight** (or Power BI/Tableau).
-
+   * Data was prepared for dashboards in **Amazon QuickSight**.
 
 
 ##  Key Insights Generated
