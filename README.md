@@ -44,7 +44,9 @@ The dataset contained transaction-level train ticket information with the follow
 ---
 
 ## Architecture Diagram
-![](images/architectire_diagram.png)
+
+
+![](train-rides-data-analytics-project/images/architectire_diagram.png)
 
 ##  Data Engineering Workflow
 
